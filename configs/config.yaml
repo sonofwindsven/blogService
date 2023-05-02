@@ -10,7 +10,8 @@ App:
   LogFileName: app
   LogFileExt: .log
 Database:
-  DBType: root
+  DBType: mysql
+  Username: root
   Password: aiziji521
   Host: 127.0.0.1:13306
   DBName: blog_service
