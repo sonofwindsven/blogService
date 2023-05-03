@@ -1,5 +1,7 @@
 package model
 
+import "blogService/pkg/app"
+
 type Tag struct {
 	*Model
 	Name  string `json:"name"`
@@ -8,4 +10,10 @@ type Tag struct {
 
 func (t *Tag) TableName() string {
 	return "blog_tag"
+}
+
+// 仅仅用于文档返回
+type TagSwagger struct {
+	List  []*Tag
+	Pager *app.Pager
 }
